@@ -5,13 +5,13 @@ public:
        
         int ans=0;
         for(int i=0;i<n;i++){
-           
-            for(int j=i;j<n;j++){
-                 unordered_map<int,int>mp;
+            unordered_map<int,int>mp;
 
-                for(int k=i;k<=j;k++){
-                     mp[nums[k]]++;
-                }
+            for(int j=i;j<n;j++){
+                  mp[nums[j]]++;
+                // for(int k=i;k<=j;k++){
+                   
+                // }
                 ans+=mp.size()*mp.size();
             }
            
